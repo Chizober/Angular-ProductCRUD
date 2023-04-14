@@ -1,0 +1,59 @@
+{
+  "productList": [
+    {
+      "productName": "Cucumber",
+      "category": "Vegetables",
+      "freshness": "Second Hand",
+      "price": 29,
+      "comment": "Needed",
+      "date": "2023-04-11T23:00:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "Sandals",
+      "category": "Electronics",
+      "freshness": "Brand New",
+      "price": 34,
+      "comment": "Needed.",
+      "date": "2023-04-11T23:00:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "Guava",
+      "category": "Fruits",
+      "freshness": "Second Hand",
+      "price": 9,
+      "comment": "This",
+      "date": "2023-04-20T23:00:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "Cucumba",
+      "category": "Vegetables",
+      "freshness": "Second Hand",
+      "price": 29,
+      "comment": "Needed",
+      "date": "2023-04-11T23:00:00.000Z",
+      "id": 4
+    },
+    {
+      "productName": "WaterMelons",
+      "category": "Vegetables",
+      "freshness": "Brand New",
+      "price": 29,
+      "comment": "Needed",
+      "date": "2023-04-11T23:00:00.000Z",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
