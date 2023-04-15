@@ -57,6 +57,17 @@ this.api.getProduct().subscribe({
       }
     })
   }
+  deleteProduct(id:number)
+  {
+    this.api.deleteProduct(id).subscribe({
+      next:(res)=>
+      {alert("product deleted successfully");
+      this.getAllProducts();
+    },error:()=>{
+      alert("product was not deleted successfully")
+    }
+    })
+  }
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
