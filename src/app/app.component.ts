@@ -5,6 +5,7 @@ import { ApiService } from './services/api.service';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
+import { NgToastService } from 'ng-angular-popup';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,7 +18,7 @@ export class AppComponent  implements OnInit {
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
-  constructor(private dialog:MatDialog, private api:ApiService){
+  constructor(private dialog:MatDialog, private api:ApiService,private toast :NgToastService){
 
   }
   ngOnInit(): void{
@@ -42,7 +43,8 @@ this.api.getProduct().subscribe({
   this.dataSource.sort = this.sort
   },
   error:(err)=>{
-    alert("error while getting products")
+    // alert("error while getting products")
+    this.toast.error({detail:'error Message',summary:'error while getting products',duration:3000})
   }
 })
   }
@@ -61,10 +63,13 @@ this.api.getProduct().subscribe({
   {
     this.api.deleteProduct(id).subscribe({
       next:(res)=>
-      {alert("product deleted successfully");
+      {
+        // alert("product deleted successfully");
+      this.toast.success({detail:'Success Message',summary:'Product deleted successfully',duration:3000})
       this.getAllProducts();
     },error:()=>{
-      alert("product was not deleted successfully")
+      // alert("product was not deleted successfully")
+      this.toast.error({detail:'error Message',summary:'product was not deleted successfully',duration:3000})
     }
     })
   }

@@ -1,15 +1,6 @@
 {
   "productList": [
     {
-      "productName": "Cucumber",
-      "category": "Vegetables",
-      "freshness": "Second Hand",
-      "price": 29,
-      "comment": "Needed",
-      "date": "2023-04-11T23:00:00.000Z",
-      "id": 1
-    },
-    {
       "productName": "Sandals",
       "category": "Electronics",
       "freshness": "Brand New",
@@ -35,6 +26,15 @@
       "comment": "Needed",
       "date": "2023-04-11T23:00:00.000Z",
       "id": 4
+    },
+    {
+      "productName": "watermelon",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 345,
+      "comment": "needed fresh",
+      "date": "2023-04-17T23:00:00.000Z",
+      "id": 5
     }
   ],
   "comments": [
